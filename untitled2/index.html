@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-image: url('https://via.placeholder.com/300x100'); /* Replace with your image URL */
+            background-size: cover;
+            height: 100px;
+            position: relative;
+        }
+        .header h2 {
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            padding: 20px;
+        }
+        .form-container h3 {
+            color: red;
+            margin-bottom: 10px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Download Your Free Brochure</h2>
+    </div>
+    <div class="form-container">
+        <h3>(* required)</h3>
+        <form>
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="first-name">First Name <span style="color: red;">*</span></label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name <span style="color: red;">*</span></label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="country">Country of Residence <span style="color: red;">*</span></label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <input type="submit" value="DOWNLOAD NOW">
+        </form>
+    </div>
+</div>
+</body>
+</html>
